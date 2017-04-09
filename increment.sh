@@ -11,6 +11,6 @@ do
     filename=${filename%.*}
 #    echo $filename
     newfile="${filename::-2}""$((10#${filename: -2} + 1))".$extension
-    echo "$newfile"
+    mv  "$filepath""$file" "$filepath""$newfile"
      
 done
